@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Error</title>
+    <style>
+        body {
+            background-color: black;
+            color: red;
+            font-family: monospace;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .error-message {
+            font-size: 24px;
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+    <script>
+        setTimeout(() => {
+            alert('Warning! Your system has been compromised!');
+        }, 3000);
+        setTimeout(() => {
+            document.body.innerHTML = '<h1 style="color:white;">APRIL FOOLS! 😂</h1>';
+        }, 7000);
+    </script>
+</head>
+<body>
+    <h1 class="error-message">CRITICAL SYSTEM ERROR!</h1>
+    <p>Attempting to fix...</p>
+</body>
+</html>
